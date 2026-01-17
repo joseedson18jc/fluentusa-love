@@ -32,7 +32,7 @@ const env = {
   appSlug: "fluentusa-love",
   // S3 URL of the app logo - set this to the URL returned by generate_image when creating custom logo
   // Leave empty to use the default icon from assets/images/icon.png
-  logoUrl: "",
+  logoUrl: "https://s3.us-west-1.amazonaws.com/assets.manus.im/generations/1737066969/a4f3e8f2-b6e5-4c0e-a0c1-9c8e1f3b5d7a.png",
   scheme: schemeFromBundleId,
   iosBundleId: bundleId,
   androidPackage: bundleId,
