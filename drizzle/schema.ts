@@ -149,6 +149,23 @@ export const userOffDayTasks = mysqlTable("user_off_day_tasks", {
   completedAt: timestamp("completedAt").defaultNow().notNull(),
 });
 
+// Pronunciation history - histórico de tentativas de pronúncia
+export const pronunciationHistory = mysqlTable("pronunciation_history", {
+  id: int("id").autoincrement().primaryKey(),
+  userId: int("userId").notNull(),
+  word: varchar("word", { length: 255 }).notNull(),
+  moduleId: int("moduleId"),
+  lessonId: int("lessonId"),
+  accuracyScore: int("accuracyScore"), // 0-100
+  userAudioUrl: text("userAudioUrl"),
+  nativeAudioUrl: text("nativeAudioUrl"),
+  userTranscription: text("userTranscription"),
+  nativeTranscription: text("nativeTranscription"),
+  feedback: json("feedback").$type<Record<string, any>>(), // {overall, strengths, improvements, tips}
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
 // Export additional types
 export type UserProfile = typeof userProfiles.$inferSelect;
 export type InsertUserProfile = typeof userProfiles.$inferInsert;
@@ -179,3 +196,6 @@ export type InsertOffDayTask = typeof offDayTasks.$inferInsert;
 
 export type UserOffDayTask = typeof userOffDayTasks.$inferSelect;
 export type InsertUserOffDayTask = typeof userOffDayTasks.$inferInsert;
+
+export type PronunciationHistory = typeof pronunciationHistory.$inferSelect;
+export type InsertPronunciationHistory = typeof pronunciationHistory.$inferInsert;

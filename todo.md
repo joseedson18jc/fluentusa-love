@@ -177,3 +177,16 @@ Todas as funcionalidades principais foram implementadas com design moderno, intu
 - [x] Feedback detalhado (pontos fortes, melhorias, dicas)
 - [x] Animações de entrada do score
 - [x] Suporte a retry e continuar
+
+
+## Funcionalidades Avançadas de Pronúncia - Concluído
+- [x] Integração com OpenAI Whisper API (server/whisper.ts)
+- [x] Schema de histórico de pronúncia no banco (drizzle/schema.ts)
+- [x] Transcrever áudio com Whisper
+- [x] Comparar transcrições com Levenshtein distance
+- [x] Analisar qualidade de áudio
+- [x] Gráfico de progresso de pronúncia (pronunciation-progress-chart.tsx)
+- [x] Visualização de espectrograma (audio-waveform-visualizer.tsx)
+- [x] Comparação visual de áudio com métricas
+- [x] Histórico de tentativas com timestamps
+- [x] Cálculo de melhoria ao longo do tempo
