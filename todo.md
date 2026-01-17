@@ -154,3 +154,26 @@ Cada módulo inclui:
 
 O FluentUSA Love está 100% pronto para ser usado ou contratado para finalização.
 Todas as funcionalidades principais foram implementadas com design moderno, intuitivo e super cool!
+
+
+## Sistema de Feedback de Pronúncia - Em Desenvolvimento
+- [ ] Backend para análise de pronúncia com IA
+- [ ] Gravação de áudio do usuário
+- [ ] Comparação de pronúncia com nativa
+- [ ] Score de acurácia
+- [ ] Componente de feedback visual
+- [ ] Integração nas lições
+
+
+## Sistema de Feedback de Pronúncia - Concluído
+- [x] Backend para análise de pronúncia com IA (server/pronunciation.ts)
+- [x] Gravação de áudio do usuário com expo-audio (hooks/use-audio-recorder.ts)
+- [x] Comparação de pronúncia com nativa
+- [x] Score de acurácia (0-100)
+- [x] Componente de feedback visual (pronunciation-feedback.tsx)
+- [x] Componente de gravação (pronunciation-recorder.tsx)
+- [x] Tela de prática de pronúncia (pronunciation-practice.tsx)
+- [x] Integração nas lições e módulos
+- [x] Feedback detalhado (pontos fortes, melhorias, dicas)
+- [x] Animações de entrada do score
+- [x] Suporte a retry e continuar
