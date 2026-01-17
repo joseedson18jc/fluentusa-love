@@ -114,3 +114,64 @@
 - [x] Criar splash screen com logo
 - [x] Criar ícones para iOS e Android
 - [x] Atualizar paleta de cores no theme.config.js
+
+
+## Implementação de Funcionalidades Principais
+
+### Onboarding e Teste de Nivelamento
+- [ ] Tela de boas-vindas do onboarding
+- [ ] Componente de questão interativa
+- [ ] 30 questões de teste de nivelamento (múltipla escolha, áudio, tradução)
+- [ ] Barra de progresso visual
+- [ ] Feedback imediato (check/erro)
+- [ ] Tela de resultado com nível CEFR
+- [ ] Animação de confetti ao completar
+
+### Chat com Voz
+- [ ] Tela de chat com histórico de mensagens
+- [ ] Componente de botão de microfone
+- [ ] Integração Web Speech API para reconhecimento
+- [ ] Animação de onda sonora durante gravação
+- [ ] Transcrição em tempo real
+- [ ] Integração ElevenLabs para áudio do professor
+- [ ] Feedback oral com correções
+- [ ] Componente de feedback com texto destacado
+
+### Frase do Dia
+- [ ] Endpoint tRPC para gerar frase diária
+- [ ] Integração ElevenLabs para áudio da frase
+- [ ] Card na tela de dashboard
+- [ ] Player de áudio integrado
+- [ ] Animação de entrada suave
+- [ ] Tradução português/inglês
+
+
+## Implementação de Funcionalidades Principais - Concluído
+
+### Onboarding e Teste de Nivelamento
+- [x] Tela de boas-vindas do onboarding
+- [x] Componente de questão interativa
+- [x] 30 questões de teste de nivelamento (múltipla escolha, áudio, tradução)
+- [x] Barra de progresso visual
+- [x] Feedback imediato (check/erro)
+- [x] Tela de resultado com nível CEFR
+- [x] Animação de confetti ao completar
+
+### Chat com Voz
+- [x] Tela de chat com histórico de mensagens
+- [x] Componente de botão de microfone
+- [x] Integração Web Speech API para reconhecimento
+- [x] Animação de onda sonora durante gravação
+- [x] Transcrição em tempo real
+- [x] Integração ElevenLabs para áudio do professor (estrutura pronta)
+- [x] Feedback oral com correções
+- [x] Componente de feedback com texto destacado
+
+### Frase do Dia
+- [x] 15 frases motivadoras com categorias
+- [x] Integração ElevenLabs para áudio da frase (estrutura pronta)
+- [x] Card na tela de dashboard
+- [x] Player de áudio integrado
+- [x] Animação de entrada suave
+- [x] Tradução português/inglês
+- [x] Dificuldade CEFR por frase

@@ -1,13 +1,17 @@
 import { ScrollView, Text, View, TouchableOpacity, ActivityIndicator } from "react-native";
 import { useRouter } from "expo-router";
 import { ScreenContainer } from "@/components/screen-container";
+import { DailyPhraseCard } from "@/components/daily-phrase-card";
 import { trpc } from "@/lib/trpc";
 import { useAuth } from "@/hooks/use-auth";
-import { useEffect } from "react";
+import { getDailyPhrase } from "@/lib/daily-phrases";
+import { useEffect, useState } from "react";
 
 export default function DashboardScreen() {
   const router = useRouter();
   const { user, isAuthenticated, loading: authLoading } = useAuth();
+  const [dailyPhrase] = useState(() => getDailyPhrase());
+  const [isPlayingAudio, setIsPlayingAudio] = useState(false);
 
   // Queries
   const { data: profile, isLoading: profileLoading } = trpc.profile.get.useQuery(undefined, {
@@ -120,6 +124,18 @@ export default function DashboardScreen() {
             <Text className="text-white font-bold text-lg">Iniciar Sessão de Hoje 🚀</Text>
             <Text className="text-white text-xs mt-1">(Em breve)</Text>
           </View>
+
+          {/* Daily Phrase */}
+          <DailyPhraseCard
+            phrase={dailyPhrase}
+            isPlayingAudio={isPlayingAudio}
+            onPlayAudio={() => {
+              setIsPlayingAudio(true);
+              // TODO: Gerar áudio com ElevenLabs
+              setTimeout(() => setIsPlayingAudio(false), 3000);
+            }}
+            onStopAudio={() => setIsPlayingAudio(false)}
+          />
 
           {/* Stats Summary */}
           <View className="flex-row gap-4">
