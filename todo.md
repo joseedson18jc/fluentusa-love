@@ -175,3 +175,42 @@
 - [x] Animação de entrada suave
 - [x] Tradução português/inglês
 - [x] Dificuldade CEFR por frase
+
+
+## Melhorias de Design e Funcionalidades - Em Progresso
+
+### Design UI/UX Moderno
+- [ ] Melhorar paleta de cores com gradientes
+- [ ] Atualizar componentes com design system moderno
+- [ ] Adicionar animacoes suaves em transicoes
+- [ ] Implementar dark mode completo
+- [ ] Melhorar tipografia e espacamento
+
+### Notificacoes Push
+- [ ] Instalar expo-notifications
+- [ ] Configurar permissoes de notificacao
+- [ ] Criar servico de notificacoes
+- [ ] Agendar lembretes diarios
+- [ ] Notificacoes de conquistas e badges
+
+### Tela de Perfil e Configuracoes
+- [ ] Tela de perfil com avatar e info do usuario
+- [ ] Configuracao de voz do professor (masculina/feminina)
+- [ ] Ajuste de velocidade da fala
+- [ ] Configuracao de dias da semana
+- [ ] Ativacao/desativacao de lembretes
+- [ ] Historico de sessoes
+- [ ] Botao de logout
+
+### Login com Google OAuth
+- [ ] Tela de login melhorada
+- [ ] Integracao com Google OAuth
+- [ ] Persistencia de sessao
+- [ ] Recuperacao de senha
+
+### Dashboard Melhorado
+- [ ] Animacoes de entrada
+- [ ] Confetti ao subir de nivel
+- [ ] Badges com animacoes
+- [ ] Setor de badges com scroll
+- [ ] Pulse animation no botao principal
